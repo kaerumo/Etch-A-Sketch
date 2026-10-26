@@ -1,0 +1,12 @@
+#container {
+  display: flex;
+  flex-wrap: wrap; /* squares wrap to the next row instead of staying on one line */
+  width: 960px;
+  height: 960px;
+}
+
+.square {
+  box-sizing: border-box; /* border stays INSIDE the square's size, so it can't break the grid */
+  border: 1px solid #ddd;
+  flex: 0 0 auto; /* don't let flexbox shrink or grow the squares */
+}
